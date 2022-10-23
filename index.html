@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base64</title>
+    <script type="text/javascript">
+      function waitForElement(id, callback) {
+        var poops = setInterval(function () {
+          if (document.getElementById(id)) {
+            clearInterval(poops);
+            callback();
+          }
+        }, 100);
+      }
+
+      waitForElement('e', function () {
+        console.log('asseatingsex');
+        let params = new URLSearchParams(location.search);
+        let yes = params.get('t');
+        console.log(atob(yes));
+        document.getElementById('e').innerHTML = atob(yes);
+      });
+    </script>
+  </head>
+  <body>
+    <p id="e"></p>
+  </body>
+</html>
